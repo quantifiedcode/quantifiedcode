@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="164" height="20">
+    <linearGradient id="b" x2="0" y2="100%">
+        <stop offset="0" stop-color="#bbb" stop-opacity=".1"/>
+        <stop offset="1" stop-opacity=".1"/>
+    </linearGradient>
+    <mask id="a">
+        <rect width="114" height="20" rx="3" fill="#fff"/>
+    </mask>
+
+        <rect x="0" y="0" rx="5" ry="5" width="140" height="20"
+        style="fill:#555;stroke:#fff;stroke-width:0;opacity:1.0">
+            <title>issues found by quantifiedcode.com</title>
+        </rect>
+
+        <rect x="134" y="0" rx="5" ry="5" width="30" height="20"
+        style="fill:#aaa;stroke:#fff;stroke-width:0;opacity:1.0">
+        </rect>
+
+        <g fill="#fff" text-anchor="left" font-family="DejaVu Sans,Verdana,Geneva,sans-serif" font-size="11">
+            <text x="5" y="15" fill="#010101" fill-opacity=".3">analysis in progress...</text>
+            <text x="5" y="14">analysis in progress...</text>
+        </g>
+</svg>
