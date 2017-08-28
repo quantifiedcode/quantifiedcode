@@ -40,7 +40,7 @@ QuantifiedCode requires the following external dependencies:
 
 Now with the dependencies installed, we can go ahead and download QuantifiedCode:
 
-    git clone git@github.com:quantifiedcode/quantifiedcode.git
+    git clone https://github.com/quantifiedcode/quantifiedcode.git
 
 ### Set up a virtual environment (optional)
 
