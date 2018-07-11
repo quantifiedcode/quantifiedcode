@@ -7,9 +7,7 @@ import Sidebar from "components/generic/sidebar"
 import Icon from "components/generic/icon"
 import Analysis from "./settings/_analysis"
 import AccessManagement from "./settings/_access_management"
-import Badges from "./settings/_badges"
 import DangerZone from "./settings/_danger_zone"
-import Hooks from "./settings/_hooks"
 import IssueClasses from "./settings/_issue_classes"
 import Basics from "./settings/_basics"
 import Settings from "settings"
@@ -64,16 +62,6 @@ var ProjectSettings = React.createClass({
             })
         }
 
-        tabs.push({
-                name: 'badges',
-                title: 'Badges',
-                href:  makeUrl(this.props.baseUrl,
-                                       {tab:'badges'},this.props.params),
-                content: <Badges
-                            project={data.project}
-                            onChange={this.reloadResources}
-                            baseUrl={this.props.baseUrl} />,
-        })
 
 
         var reloadResources = this.reloadResources
@@ -110,16 +98,6 @@ var ProjectSettings = React.createClass({
                 content : <IssueClasses project={data.project}
                                         data={this.props.data}
                                         baseUrl={this.props.baseUrl} params={this.props.params} />
-            },
-            {
-                name: 'hooks',
-                title: 'Hooks',
-                href:  makeUrl(this.props.baseUrl,
-                                       {tab:'hooks'},this.props.params),
-                content: <Hooks
-                            project={data.project}
-                            onChange={this.reloadResources}
-                            baseUrl={this.props.baseUrl} />,
             })
         }
 

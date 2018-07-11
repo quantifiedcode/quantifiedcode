@@ -38,7 +38,7 @@ def get_app(settings):
 
     webapp_context = {
         'DEBUG' : debug,
-        'website_title' : settings.get('website_title','QuantifiedCode'),
+        'website_title' : settings.get('website_title','Scanner'),
         'static_url' : '{}{}'.format(settings.get('frontend.url'), settings.get('frontend.static_url')),
         'app_url' : settings.get('frontend.app_url')
     }

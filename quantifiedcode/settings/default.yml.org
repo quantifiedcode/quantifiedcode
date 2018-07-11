@@ -2,7 +2,7 @@
 backend:
   url: /api
   # by default, we use an in-memory instance of SQLite for testing.
-  db_url: 'postgresql:///qc'
+  db_url_test: 'sqlite+pysqlite:///:memory:'
   paths:
     repositories: "data/repositories"
     tasks: "data/tasks"

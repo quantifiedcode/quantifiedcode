@@ -161,7 +161,7 @@ export function removeCallback(name,callback){
 
 export function setTitle(newTitle) {
   // Set page title
-  var completeTitle = "QuantifiedCode"
+  var completeTitle = "Scanner"
   if(newTitle !== undefined && newTitle.length) {
     completeTitle = newTitle + " - " + completeTitle
   }

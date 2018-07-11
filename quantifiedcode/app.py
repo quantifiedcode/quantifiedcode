@@ -68,7 +68,7 @@ if __name__ == '__main__':
     app = get_app(settings)
 
     app.run(
-        debug=settings.get('debug', False),
+        debug=settings.get('debug', True),
         host=host,
         port=port,
         processes=1,

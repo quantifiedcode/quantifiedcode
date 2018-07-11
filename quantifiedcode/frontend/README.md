@@ -1,16 +1,16 @@
 # Getting Up & Running
 
-Here's what you need to do in order to run the code with the official QuantifiedCode backend API:
+Here's what you need to do in order to run the code with the official Scanner backend API:
 
 * Check out the code on your machine
 * Create and activate a virtual environment (optional): `virtualenv venv` , `source venv/bin/activate`
 * Go to the `qc` directory and install the requirements: `pip install -r requirements.txt`
 * Install `npm` and install the requirements: `npm install` (in the root directory)
-* Run `ENVIRONMENT=development make` to build the assets and store them in the 'build' directory: `make` (in the `qc/quantifiedcode/frontend` directory).
+* Run `ENVIRONMENT=development make` to build the assets and store them in the 'build' directory: `make` (in the `qc//frontend` directory).
   This will keep running and update changed files continously.
 * Run the Flask HTTP server: `python app.py`
 
-You should now be able to retrieve data from the QuantifiedCode backend API, 
+You should now be able to retrieve data from the Scanner backend API, 
 while using your own local version of the frontend.
 
 ## Design Guidelines
@@ -135,8 +135,8 @@ ENVIRONMENT=test py.test frontend/tests
 You will also have to start the webserver with the same environment setting:
 
 ```bash
-#within the quantifiedcode directory:
-ENVIRONMENT=test python quantifiedcode/app.py
+#within the  directory:
+ENVIRONMENT=test python /app.py
 ```
 
 Make sure that all the tests pass locally before making a pull request. In any case our CI server

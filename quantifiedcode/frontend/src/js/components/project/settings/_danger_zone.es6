@@ -120,7 +120,7 @@ var DangerZone = React.createClass({
                                             <div className="panel panel-default">
                                               <div className="panel-heading">Delete project</div>
                                               <div className="panel-body">
-                                                  <p><strong>Warning:</strong> This action deletes your project from your QuantifiedCode account. This cannot be undone.<br/>
+                                                  <p><strong>Warning:</strong> This action deletes your project from your Scanner account. This cannot be undone.<br/>
                                                   <i>Your Git(hub) repos won&#39;t be deleted.</i></p>
                                                   <A className="pull-right btn btn-danger"
                                                      onClick={this.confirmDeleteProject}>

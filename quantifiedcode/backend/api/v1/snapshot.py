@@ -117,7 +117,7 @@ class SnapshotFileRevisionIssues(Resource, FileRevisionIssueListMixin):
 
         #we construct the count query
         count_query = select([func.count('*')])\
-                      .select_from(file_revisions_query)
+                      .alias(file_revisions_query)
 
         #we construct the table we will select issues from
         select_table = fr_table\

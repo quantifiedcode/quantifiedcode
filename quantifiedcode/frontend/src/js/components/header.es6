@@ -138,7 +138,7 @@ var Header = React.createClass({
                 hidden={false}
                 cancel="Not now"
                 title={[<i className="fa fa-exclamation-triangle" />,'Connection problem']}>
-                    <p>There was a problem connecting to www.quantifiedcode.com...<br />Please try reloading the page.</p>
+                    <p>There was a problem connecting to www..com...<br />Please try reloading the page.</p>
               </Modal>
         }
         else if (this.state.serviceUnavailable){
@@ -156,7 +156,7 @@ var Header = React.createClass({
                 hidden={false}
                 cancel="Not now"
                 title={[<i className="fa fa-exclamation-triangle" />,'Temporary maintenance']}>
-                    <p>QuantifiedCode is currently down for maintenance, please try again later. Sorry for the inconvenience!</p>
+                    <p>Scanner is currently down for maintenance, please try again later. Sorry for the inconvenience!</p>
               </Modal>
         }
         else if (this.state.userHasBeenLoggedOut){

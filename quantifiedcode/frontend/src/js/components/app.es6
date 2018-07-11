@@ -71,8 +71,8 @@ var MainApp = React.createClass({
                 cancel="Not now"
                 hidden={false}
                 closable={false}
-                title={['QuantifiedCode has been updated!']}>
-                  <p>There is a new version of QuantifiedCode.<br/>Please reload this page to enjoy the new release.</p>
+                title={['Scanner has been updated!']}>
+                  <p>There is a new version of Scanner.<br/>Please reload this page to enjoy the new release.</p>
               </Modal>
         }
 

@@ -143,9 +143,6 @@ var Menu = React.createClass({
         userMenuList.push(<li key="user-name" className="section"><span><strong>{user.name}</strong></span></li>)
         userMenuList.push(<li key="divider1" role="separator" className="divider"></li>)
         userMenuList.push(<li key="settings"><A id="settings-link" href={makeUrl("/settings")}>Settings</A></li>)
-        userMenuList.push(<li key="documentation"><A id="documentation-link" href="http://docs.quantifiedcode.com/" target="_blank">Documentation</A></li>)
-        userMenuList.push(<li key="report-issue"><a id="issue-link" href="https://github.com/quantifiedcode/issues/issues/new" target="_blank"
-                        onClick={function(){Utils.trackEvent("Usage", "Report issue link clicked");}}>Report issue</a></li>)
         userMenuList.push(<li key="divider3" role="separator" className="divider"></li>)
         userMenuList.push(<li key="logout"><A id="logout-link" href={makeUrl("/user/logout")}>Logout</A></li>)
 

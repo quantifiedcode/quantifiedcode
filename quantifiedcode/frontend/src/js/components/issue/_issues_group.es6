@@ -21,7 +21,7 @@ var IssuesGroup = React.createClass({
     removeIssueClassFromProject : function() {
 
         var onError = function(xhr) {
-            var reportIssueLink = <A href="https://github.com/quantifiedcode/issues/issues/new" target="_blank">report an issue</A>
+            var reportIssueLink = <A href="https://github.com//issues/issues/new" target="_blank">report an issue</A>
             var description = <span>Code check couldn&#39;t be disabled. Please try again or {reportIssueLink}.</span>
 
             this.flashMessagesService.postMessage({
