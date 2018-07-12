@@ -20,6 +20,7 @@ logger = logging.getLogger(__name__)
 from checkmate.contrib.plugins.git.commands.update_stats import Command as UpdateStatsCommand
 from checkmate.management.commands.reset import Command as ResetCommand
 from quantifiedcode.settings import settings, backend
+from quantifiedcode.backend.tasks.helpers import ExclusiveTask,TaskLogger
 from quantifiedcode.backend.settings import BACKEND_PATH
 
 from ...worker import celery

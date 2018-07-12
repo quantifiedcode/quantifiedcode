@@ -35,8 +35,8 @@ def delete_pending_project():
 
 @celery.task(queue="delete", ignore_result=False, time_limit=3600)
 def delete_pending_user():
-    pending_projects = backend.filter(User, {'delete': True}).sort('updated_at', 1).limit(100)
-    logger.debug("%d users marked for deletion" % len(pending_projects))
+    pending_users = backend.filter(User, {'delete': True}).sort('updated_at', 1).limit(100)
+    logger.debug("%d users marked for deletion" % len(pending_users))
     for pending_user in pending_users:
         return delete_user(pending_user.pk, task_id=delete_pending_user.request.id)
     logger.debug("No users left to delete...")

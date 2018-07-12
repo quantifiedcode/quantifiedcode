@@ -21,6 +21,7 @@ backend:
         - {name: tasks, routing_key: 'task'}
         - {name: analysis, routing_key: 'analysis'}
         - {name: reset, routing_key: 'reset'}
+        - {name: delete, routing_key: 'delete'}
         - {name: fetch, routing_key: 'fetch'}
         - {name: email, routing_key: 'email'}
       task_default_exchange: tasks

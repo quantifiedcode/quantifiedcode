@@ -2,7 +2,7 @@ import UserApi from "api/user"
 import React from "react"
 import Modal from "components/generic/modal"
 import Utils from "utils"
-import {makeUrl, replaceUrl, A} from "routing"
+import {makeUrl, redirectTo, replaceUrl, A} from "routing"
 
 var DangerZone = React.createClass({
 
